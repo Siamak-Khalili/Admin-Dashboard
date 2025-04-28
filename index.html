@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="dashboard__sidebar">
+        <div class="sidebar__logo"><h1>داشبورد</h1></div>
+        <div class="sidebar__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-tow"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <ul class="sidebar__menu">
+          <li class="sidebar__item sidebar__item--active" data-tab-target="dashboard">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="m498.147 222.58-57.298-57.298V15c0-8.284-6.716-15-15-15h-64.267c-8.284
+                     0-15 6.716-15 15v56.017l-57.174-57.174C280.482 4.916 268.614 0 255.99 0c-12.625 0-24.494
+                      4.916-33.42 13.843L13.832 222.582c-18.428 18.427-18.428 48.411 0 66.838 8.927 8.927 20.795
+                       13.843 33.419 13.843 2.645 0 5.253-.229 7.812-.651v154.223c0 30.419 24.748 55.166 55.167
+                        55.166h97.561c8.284 0 15-6.716 15-15V383.467h66.4V497c0 8.284 6.716 15 15 15h97.56c30.419
+                         0 55.166-24.747 55.166-55.166V302.611c2.558.423 5.165.651 7.81.651h.003c12.622
+                          0 24.49-4.916 33.419-13.844 8.926-8.926 13.842-20.794 13.843-33.418-.002-12.624-4.918-24.493-13.845-33.42zM376.583 
+                          30h34.267v105.283l-34.267-34.268zm25.167 452h-82.56V368.467c0-8.284-6.716-15-15-15h-96.4c-8.284 0-15 6.716-15 15V482h-82.561c-13.877 
+                          0-25.167-11.289-25.167-25.166V285.025L255.99 114.101l170.926 170.926v171.808c0 13.876-11.289
+                           25.165-25.166 25.165zm75.186-213.795a17.155 17.155 0 0 1-12.208 5.058 17.156 17.156 
+                           0 0 1-12.204-5.055l-.004-.004L266.597 82.281c-5.856-5.859-15.354-5.857-21.213 0L59.459 
+                           268.203l-.005.005c-3.26 3.26-7.593 5.055-12.203 5.055s-8.945-1.795-12.206-5.056c-6.73-6.73-6.73-17.682 
+                           0-24.412L243.783 35.056A17.152 17.152 0 0 1 255.99 30c4.61 0 8.945 1.796 12.205 5.056l82.781 82.78 125.958 
+                           125.957c6.731 6.73 6.731 17.683.002 24.412z"
+                    opacity="1"
+                    data-original="#000000" />
+                </g>
+              </svg>
+            </div>
+            داشبورد
+          </li>
+          <li class="sidebar__item" data-tab-target="tickets">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 512.005 512.005"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="M511.513 223.904 452.508 42.326c-1.708-5.251-7.348-8.125-12.602-6.42L6.912 176.612c-5.252 1.707-8.126 7.349-6.42 12.602l27.93 85.949c-.008.168-.025.333-.025.503v190.925c0 5.522 4.478 10 10 10H493.68c5.522 0 10-4.478 10-10V275.666c0-5.522-4.478-10-10-10h-78.32l89.734-29.16c5.251-1.707 8.125-7.349 6.419-12.602zm-27.834 61.762v170.925H48.396V285.666h55.392v111.408c0 5.522 4.478 10 10 10s10-4.478 10-10V285.666H483.679zm-133.034-20H46.365l-23.762-73.123 52.711-17.129 20.162 61.276c1.385 4.208 5.296 6.877 9.497 6.877 1.036 0 2.09-.162 3.128-.504 5.246-1.727 8.1-7.378 6.373-12.625l-20.139-61.206L436.577 58.017l52.825 162.558-138.757 45.091z"
+                    opacity="1"
+                    data-original="#000000" />
+                  <path
+                    d="M421.405 101.849c-1.708-5.251-7.349-8.124-12.602-6.42l-260.728 84.727c-5.252 1.707-8.126 7.349-6.42 12.602a10.005 10.005 0 0 0 9.509 6.912c1.024 0 2.066-.159 3.093-.492l260.728-84.727c5.252-1.707 8.127-7.349 6.42-12.602zM377.434 166.804l49.352-16.037c5.252-1.707 8.126-7.349 6.42-12.602-1.708-5.252-7.349-8.125-12.602-6.42l-49.352 16.037c-5.252 1.707-8.126 7.349-6.42 12.602a10.005 10.005 0 0 0 9.509 6.912c1.024 0 2.067-.159 3.093-.492zM419.143 212.741a10.005 10.005 0 0 0 9.509 6.912 10.02 10.02 0 0 0 3.093-.492l15.617-5.075c5.252-1.707 8.127-7.349 6.42-12.602-1.708-5.252-7.348-8.126-12.602-6.42l-15.617 5.075c-5.252 1.707-8.127 7.349-6.42 12.602zM390.685 211.473l-15.618 5.075c-5.252 1.707-8.127 7.349-6.42 12.602 1.373 4.226 5.293 6.912 9.509 6.912 1.023 0 2.065-.159 3.093-.492l15.618-5.075c5.252-1.707 8.126-7.349 6.42-12.602-1.706-5.252-7.343-8.125-12.602-6.42zM251.132 186.817l-91.255 29.654c-5.252 1.707-8.127 7.349-6.42 12.602a10.005 10.005 0 0 0 9.509 6.912 10.02 10.02 0 0 0 3.093-.492l91.255-29.654c5.252-1.707 8.126-7.349 6.42-12.602-1.709-5.252-7.35-8.125-12.602-6.42zM113.788 420.364c-5.522 0-10 4.478-10 10v3.916c0 5.522 4.478 10 10 10s10-4.478 10-10v-3.916c0-5.522-4.478-10-10-10zM161.554 322.663c0 5.522 4.478 10 10 10h274.148c5.522 0 10-4.478 10-10s-4.478-10-10-10H171.554c-5.522 0-10 4.477-10 10zM445.703 350.847H393.81c-5.522 0-10 4.478-10 10s4.478 10 10 10h51.893c5.522 0 10-4.478 10-10s-4.478-10-10-10zM445.703 417.427h-16.422c-5.522 0-10 4.478-10 10s4.478 10 10 10h16.422c5.522 0 10-4.478 10-10s-4.478-10-10-10zM392.608 417.427h-16.421c-5.522 0-10 4.478-10 10s4.478 10 10 10h16.421c5.522 0 10-4.478 10-10s-4.477-10-10-10zM267.507 350.847h-95.952c-5.522 0-10 4.478-10 10s4.478 10 10 10h95.952c5.522 0 10-4.478 10-10s-4.478-10-10-10z"
+                    opacity="1"
+                    data-original="#000000" />
+                </g>
+              </svg>
+            </div>
+            تیکت‌ها
+          </li>
+          <li class="sidebar__item" data-tab-target="users">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="M437.76 195.421c14.561-14.261 23.04-33.742 23.04-54.621 0-42.346-34.45-76.8-76.8-76.8-13.992 0-27.758 3.846-39.825 11.125a8.54 8.54 0 0 0-2.9 11.717c2.433 4.038 7.683 5.325 11.717 2.9 9.408-5.675 20.125-8.675 31.008-8.675 32.933 0 59.733 26.796 59.733 59.733 0 20.283-10.158 38.979-27.208 50.037-14.317 9.392-32.467 12.1-49.042 7.379-4.483-1.292-9.25 1.325-10.55 5.858a8.538 8.538 0 0 0 5.867 10.55 77.026 77.026 0 0 0 21.2 2.975c13.418 0 26.388-3.66 37.903-10.27 43.806 15.873 73.03 57.232 73.03 104.137v42.667h-77.812c-6.044-56.996-41.902-106.872-94.205-130.555 16.644-16.946 26.95-40.138 26.95-65.711C349.867 106.108 307.758 64 256 64s-93.867 42.108-93.867 93.867c0 25.581 10.312 48.78 26.965 65.728-17.602 7.997-33.927 19.185-47.773 32.952-26.543 26.619-42.695 60.784-46.529 97.588H17.067v-42.667c0-29.55 11.542-57.412 32.467-78.425 11.519-11.446 25.543-20.178 40.643-25.666C101.694 213.96 114.625 217.6 128 217.6c7.167 0 14.3-1 21.2-2.975a8.54 8.54 0 0 0 5.867-10.55c-1.3-4.533-6.067-7.146-10.55-5.858-16.567 4.729-34.708 2.025-49.083-7.4-17.008-11.038-27.167-29.733-27.167-50.017 0-32.937 26.8-59.733 59.733-59.733 10.883 0 21.6 3 31.008 8.675a8.552 8.552 0 0 0 11.717-2.9c2.433-4.037 1.133-9.279-2.9-11.717C155.758 67.846 141.992 64 128 64c-42.35 0-76.8 34.454-76.8 76.8 0 20.863 8.465 40.329 22.984 54.577a129.985 129.985 0 0 0-36.717 25.59C13.308 245.233 0 277.371 0 311.467v51.2a8.53 8.53 0 0 0 8.533 8.533h85.333v68.267a8.53 8.53 0 0 0 8.533 8.533h307.2a8.53 8.53 0 0 0 8.533-8.533V371.2h85.333a8.53 8.53 0 0 0 8.533-8.533v-51.2c.002-50.455-29.32-95.339-74.238-116.046zM179.2 157.867c0-42.346 34.45-76.8 76.8-76.8 42.35 0 76.8 34.454 76.8 76.8s-34.45 76.8-76.8 76.8c-42.35 0-76.8-34.455-76.8-76.8zm221.867 273.066H110.933V371.2c0-38.692 15.083-75.129 42.45-102.579 14.417-14.34 31.895-25.463 50.634-32.659 14.895 9.947 32.767 15.771 51.983 15.771 19.248 0 37.151-5.841 52.06-15.818 55.778 21.431 93.007 75.205 93.007 135.285v59.733z"
+                    opacity="1"
+                    data-original="#000000" />
+                </g>
+              </svg>
+            </div>
+            کاربران
+          </li>
+          <li class="sidebar__item" data-tab-target="profile">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 24 24"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M12 12.75c-3.17 0-5.75-2.58-5.75-5.75S8.83 1.25 12 1.25 17.75 3.83 17.75 7s-2.58 5.75-5.75 5.75zm0-10C9.66 2.75 7.75 4.66 7.75 7s1.91 4.25 4.25 4.25S16.25 9.34 16.25 7 14.34 2.75 12 2.75zM15.82 22.75c-.38 0-.74-.14-1-.4-.31-.31-.45-.76-.38-1.23l.19-1.35c.05-.35.26-.76.51-1.02l3.54-3.54c1.42-1.42 2.67-.61 3.28 0 .52.52.79 1.08.79 1.64 0 .57-.26 1.1-.79 1.63l-3.54 3.54c-.25.25-.67.46-1.02.51l-1.35.19c-.08.02-.15.03-.23.03zm4.49-6.83c-.18 0-.34.12-.57.35l-3.54 3.54a.38.38 0 0 0-.08.17l-.18 1.25 1.25-.18c.04-.01.14-.06.17-.09l3.54-3.54c.16-.16.35-.39.35-.57 0-.15-.12-.36-.35-.58-.24-.24-.42-.35-.59-.35z"
+                      opacity="1"
+                      data-original="#000000" />
+                    <path
+                      d="M20.92 19.22c-.07 0-.14-.01-.2-.03a3.977 3.977 0 0 1-2.74-2.74c-.11-.4.12-.81.52-.92s.81.12.92.52c.23.82.88 1.47 1.7 1.7a.749.749 0 0 1-.2 1.47zM3.41 22.75c-.41 0-.75-.34-.75-.75 0-4.27 4.19-7.75 9.34-7.75 1.09 0 2.17.16 3.18.46.4.12.62.54.5.93-.12.4-.54.62-.93.5-.88-.26-1.8-.4-2.75-.4-4.32 0-7.84 2.8-7.84 6.25 0 .42-.34.76-.75.76z"
+                      opacity="1"
+                      data-original="#000000" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            پروفایل
+          </li>
+          <li class="sidebar__item" data-tab-target="signin">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="m433.798 106.268-96.423-91.222C327.119 5.343 313.695 0 299.577 0H116C85.673 0 61 24.673 61 55v402c0 30.327 24.673 55 55 55h280c30.327 0 55-24.673 55-55V146.222c0-15.049-6.27-29.612-17.202-39.954zM404.661 120H330c-2.757 0-5-2.243-5-5V44.636zM396 482H116c-13.785 0-25-11.215-25-25V55c0-13.785 11.215-25 25-25h179v85c0 19.299 15.701 35 35 35h91v307c0 13.785-11.215 25-25 25z"
+                    opacity="1"
+                    data-original="#000000" />
+                  <path
+                    d="M363 200H143c-8.284 0-15 6.716-15 15s6.716 15 15 15h220c8.284 0 15-6.716 15-15s-6.716-15-15-15zM363 280H143c-8.284 0-15 6.716-15 15s6.716 15 15 15h220c8.284 0 15-6.716 15-15s-6.716-15-15-15zM215.72 360H143c-8.284 0-15 6.716-15 15s6.716 15 15 15h72.72c8.284 0 15-6.716 15-15s-6.716-15-15-15z"
+                    opacity="1"
+                    data-original="#000000" />
+                </g>
+              </svg>
+            </div>
+            ورود
+          </li>
+          <li class="sidebar__item" data-tab-target="signup">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 74 74"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="M32.415 59.085a1.007 1.007 0 0 1-.325-.054A26.357 26.357 0 0 1 14.969 41.91a1 1 0 0 1 .127-.9l14.87-21.218c9.5-12.329 24.814-18.928 41-17.681a1 1 0 0 1 .921.92c1.244 16.184-5.352 31.5-17.645 40.974l-.036.027L32.988 58.9a.993.993 0 0 1-.573.185zM17.029 41.738a24.339 24.339 0 0 0 15.233 15.233l20.777-14.562c11.527-8.892 17.81-23.179 16.913-38.36-15.2-.9-29.484 5.391-38.375 16.93z"
+                    opacity="1"
+                    data-original="#000000" />
+                  <path
+                    d="M68.53 23.292a1.022 1.022 0 0 1-.189-.017 22.066 22.066 0 0 1-11.508-6.108 22.066 22.066 0 0 1-6.108-11.508 1 1 0 0 1 1.965-.375 20.073 20.073 0 0 0 5.557 10.469 20.073 20.073 0 0 0 10.469 5.557 1 1 0 0 1-.186 1.982zM45.685 36.146a7.831 7.831 0 1 1 5.539-2.291 7.81 7.81 0 0 1-5.539 2.291zm0-13.665a5.835 5.835 0 1 0 4.125 1.709 5.8 5.8 0 0 0-4.125-1.709zM40.285 71.962h-.06a1 1 0 0 1-.793-.477l-7.869-12.876a1 1 0 1 1 1.707-1.043l7.119 11.649 5.389-6.825a14.518 14.518 0 0 0 2.984-10.8l-.658-5.06a1 1 0 1 1 1.983-.258l.658 5.061a16.525 16.525 0 0 1-3.4 12.3l-6.279 7.953a1 1 0 0 1-.781.376zM15.912 42.583a1 1 0 0 1-.521-.146L2.517 34.568a1 1 0 0 1-.1-1.637l7.953-6.279a16.532 16.532 0 0 1 12.3-3.4l5.061.658a1 1 0 1 1-.258 1.983l-5.06-.658a14.523 14.523 0 0 0-10.8 2.984l-6.828 5.392 11.649 7.119a1 1 0 0 1-.522 1.853zM15.224 72.038a1 1 0 0 1-.707-1.707l8.931-8.931a1 1 0 1 1 1.414 1.414l-8.931 8.931a1 1 0 0 1-.707.293zM2.962 59.776a1 1 0 0 1-.707-1.707l8.931-8.931a1 1 0 1 1 1.414 1.414l-8.931 8.931a1 1 0 0 1-.707.293zM3.568 71.432a1 1 0 0 1-.707-1.707l9.612-9.612a1 1 0 0 1 1.414 1.414l-9.612 9.612a1 1 0 0 1-.707.293z"
+                    opacity="1"
+                    data-original="#000000" />
+                </g>
+              </svg>
+            </div>
+            ثبت نام
+          </li>
+          <li class="sidebar__item" data-tab-target="logout">
+            <div class="sidebar__item__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="512"
+                height="512"
+                x="0"
+                y="0"
+                viewBox="0 0 100 100"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+                class="">
+                <g
+                  transform="matrix(-1,-1.2246467991473532e-16,1.2246467991473532e-16,-1,100,100)">
+                  <path
+                    d="M74 92H50c-1.658 0-3-1.342-3-3s1.342-3 3-3h24c4.963 0 9-4.037 9-9V23c0-4.963-4.037-9-9-9H50c-1.658 0-3-1.342-3-3s1.342-3 3-3h24c8.271 0 15 6.729 15 15v54c0 8.271-6.729 15-15 15zm-9.879-44.121-15-15c-1.172-1.172-3.07-1.172-4.242 0s-1.172 3.07 0 4.242L54.758 47H14c-1.658 0-3 1.342-3 3s1.342 3 3 3h40.758l-9.879 9.879A2.998 2.998 0 0 0 47 68a2.99 2.99 0 0 0 2.121-.879l15-15a2.998 2.998 0 0 0 0-4.242z"
+                    opacity="1"
+                    data-original="#000000"
+                    class="" />
+                </g>
+              </svg>
+            </div>
+            خروج
+          </li>
+        </ul>
+      </aside>
+
+      <main class="dashboard__main">
+        <section id="dashboard" class="content content--active">
+          <h2 class="content__title">خوش آمدید به داشبورد</h2>
+
+          <div class="dashboard__overview">
+            <div class="dashboard__overview-card">
+              <div class="dashboard__overview-card-content">
+                <h3 class="dashboard__overview-card-title">تعداد کل تیکت‌ها</h3>
+                <span class="dashboard__overview-card-value">1200</span>
+              </div>
+              <div class="dashboard__overview-card-icon">
+                <img src="assets/images/Dashboard.svg" alt="تعداد تیکت‌ها" />
+              </div>
+            </div>
+
+            <div class="dashboard__overview-card">
+              <div class="dashboard__overview-card-content">
+                <h3 class="dashboard__overview-card-title">
+                  تیکت‌های پاسخ داده نشده
+                </h3>
+                <span class="dashboard__overview-card-value">75</span>
+              </div>
+              <div class="dashboard__overview-card-icon">
+                <img
+                  src="assets/images/Dashboard.svg"
+                  alt="تیکت‌های پاسخ داده نشده" />
+              </div>
+            </div>
+
+            <div class="dashboard__overview-card">
+              <div class="dashboard__overview-card-content">
+                <h3 class="dashboard__overview-card-title">تعداد کل کاربران</h3>
+                <span class="dashboard__overview-card-value">530</span>
+              </div>
+              <div class="dashboard__overview-card-icon">
+                <img src="assets/images/Dashboard.svg" alt="تعداد کاربران" />
+              </div>
+            </div>
+
+            <div class="dashboard__overview-card">
+              <div class="dashboard__overview-card-content">
+                <h3 class="dashboard__overview-card-title">مبلغ کل فروش</h3>
+                <span class="dashboard__overview-card-value"
+                  >85,000,000 تومان</span
+                >
+              </div>
+              <div class="dashboard__overview-card-icon">
+                <img src="assets/images/Dashboard.svg" alt="مبلغ کل فروش" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__news">
+            <h3 class="dashboard__news-title">جدیدترین اخبار سایت</h3>
+            <div class="dashboard__news-card news-card1">
+              <h3 class="dashboard__news-card-title">
+                نسخه جدید اپلیکیشن منتشر شد
+              </h3>
+              <p class="dashboard__news-card-summary">
+                نسخه 2.0 اپلیکیشن موبایل با امکانات جدید و بهبودهای گسترده امروز
+                منتشر شد.
+              </p>
+            </div>
+            <div class="dashboard__news-card news-card2">
+              <h3 class="dashboard__news-card-title">شروع جشنواره فروش ویژه</h3>
+              <p class="dashboard__news-card-summary">
+                با تخفیف‌های بی‌نظیر از تاریخ ۱۰ اردیبهشت تا ۲۰ اردیبهشت همراه
+                ما باشید.
+              </p>
+            </div>
+            <div class="dashboard__news-card news-card3">
+              <h3 class="dashboard__news-card-title">
+                اضافه شدن بخش بلاگ به سایت
+              </h3>
+              <p class="dashboard__news-card-summary">
+                از این پس مقالات آموزشی و تخصصی را در بخش بلاگ سایت مطالعه کنید.
+              </p>
+            </div>
+          </div>
+
+          <div class="dashboard__projects">
+            <h3 class="dashboard__projects-title">پروژه‌های اخیر</h3>
+            <ul class="dashboard__projects-list">
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project3.svg" alt="" />
+                  <h4 class="dashboard__project-title">
+                    طراحی وب‌سایت فروشگاهی
+                  </h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال انجام</span>
+                  <span class="dashboard__project-date">1404/01/20</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project5.svg" alt="" />
+                  <h4 class="dashboard__project-title">اپلیکیشن مدیریت مالی</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">تکمیل شده</span>
+                  <span class="dashboard__project-date">1404/01/10</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project6.svg" alt="" />
+                  <h4 class="dashboard__project-title">سیستم چت آنلاین</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال تست</span>
+                  <span class="dashboard__project-date">1404/01/15</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project1.svg" alt="" />
+                  <h4 class="dashboard__project-title">طراحی پنل مدیریت</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال طراحی</span>
+                  <span class="dashboard__project-date">1404/01/05</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project2.svg" alt="" />
+                  <h4 class="dashboard__project-title">پروژه بهینه‌سازی سئو</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال تحلیل</span>
+                  <span class="dashboard__project-date">1404/01/01</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project3.svg" alt="" />
+                  <h4 class="dashboard__project-title">
+                    راه‌اندازی فروشگاه اینترنتی
+                  </h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">معلق</span>
+                  <span class="dashboard__project-date">1403/12/25</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="tickets" class="content">
+          <h2 class="content__title">مشاهده درخواست های جاری</h2>
+
+          <div class="requests-list">
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">۲</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/04</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15425</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="/assets/images/user1.jpg"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">سیامک خلیلی</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">1</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/05</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15426</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="assets/images/user2.webp"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">نازنین رستمی</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">1</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/06</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15427</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="assets/images/user6.webp"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">آرمین نظری</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">5</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/07</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15428</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="assets/images/user3.webp"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">پریسا کریمی</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">3</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/08</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15429</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="assets/images/user5.webp"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">کیان احمدزاده</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+            <div class="request-item">
+              <div class="request-item__header">
+                <div class="request-item__type-group">
+                  <div class="request-item__count">3</div>
+                  <span class="request-item__type">آپلود مستندات</span>
+                </div>
+                <span class="request-item__date">1404/02/08</span>
+              </div>
+              <div class="request-item__content">
+                <h3 class="request-item__title">درخواست عضویت</h3>
+                <p class="request-item__id">شناسه درخواست: #15500</p>
+              </div>
+              <div class="request-item__user">
+                <div class="request-item__user__info">
+                  <img
+                    src="assets/images/user4.webp"
+                    alt="User Avatar"
+                    class="request-item__user-avatar" />
+                  <span class="request-item__user-name">سارا اکبری</span>
+                </div>
+                <button class="request-item__btn">مشاهده درخواست</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="users" class="content">
+          <h2 class="content__title">لیست کاربران</h2>
+
+          <ul class="user-list">
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user1.jpg"
+                  alt="آواتار سیامک خلیلی"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">سیامک خلیلی</span>
+                  <span class="user-list__role"
+                    >مدیر پروژه و توسعه‌دهنده اصلی</span
+                  >
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">124 تیکت</span>
+                <span class="user-list__register-date"> 1392/06/15</span>
+                <span class="user-list__status">آنلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user2.webp"
+                  alt="آواتار نازنین رستمی"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">نازنین رستمی</span>
+                  <span class="user-list__role">توسعه‌دهنده فرانت‌اند</span>
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">35 تیکت</span>
+                <span class="user-list__register-date"> 1402/11/03</span>
+                <span class="user-list__status">آفلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user6.webp"
+                  alt="آواتار آرمین نظری"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">آرمین نظری</span>
+                  <span class="user-list__role">طراح UI/UX</span>
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">19 تیکت</span>
+                <span class="user-list__register-date"> 1403/01/22</span>
+                <span class="user-list__status">آنلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user3.webp"
+                  alt="آواتار پریسا کریمی"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">پریسا کریمی</span>
+                  <span class="user-list__role">توسعه‌دهنده بک‌اند</span>
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">27 تیکت</span>
+                <span class="user-list__register-date"> 1401/09/18</span>
+                <span class="user-list__status">آفلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user5.webp"
+                  alt="آواتار کیان احمدزاده"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">کیان احمدزاده</span>
+                  <span class="user-list__role">کارشناس امنیت وب</span>
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">14 تیکت</span>
+                <span class="user-list__register-date"> 1402/03/05</span>
+                <span class="user-list__status">آنلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+
+            <li class="user-list__item">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user4.webp"
+                  alt="آواتار سارا اکبری"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">سارا اکبری</span>
+                  <span class="user-list__role">مدیر تولید محتوا</span>
+                </div>
+              </div>
+
+              <div class="user-list__details">
+                <span class="user-list__tickets">8 تیکت</span>
+                <span class="user-list__register-date"> 1403/02/10</span>
+                <span class="user-list__status">آفلاین</span>
+                <span class="user-list__edit">ویرایش</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="dashboard__projects">
+            <h3 class="dashboard__projects-title">پروژه‌های اخیر</h3>
+            <ul class="dashboard__projects-list">
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project3.svg" alt="" />
+                  <h4 class="dashboard__project-title">
+                    طراحی وب‌سایت فروشگاهی
+                  </h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال انجام</span>
+                  <span class="dashboard__project-date">1404/01/20</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project5.svg" alt="" />
+                  <h4 class="dashboard__project-title">اپلیکیشن مدیریت مالی</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">تکمیل شده</span>
+                  <span class="dashboard__project-date">1404/01/10</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project6.svg" alt="" />
+                  <h4 class="dashboard__project-title">سیستم چت آنلاین</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال تست</span>
+                  <span class="dashboard__project-date">1404/01/15</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project1.svg" alt="" />
+                  <h4 class="dashboard__project-title">طراحی پنل مدیریت</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال طراحی</span>
+                  <span class="dashboard__project-date">1404/01/05</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project2.svg" alt="" />
+                  <h4 class="dashboard__project-title">پروژه بهینه‌سازی سئو</h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">در حال تحلیل</span>
+                  <span class="dashboard__project-date">1404/01/01</span>
+                </div>
+              </li>
+              <li class="dashboard__project-header">
+                <div class="dashboard__project-name">
+                  <img src="assets/images/project3.svg" alt="" />
+                  <h4 class="dashboard__project-title">
+                    راه‌اندازی فروشگاه اینترنتی
+                  </h4>
+                </div>
+                <div class="dashboard__project-details">
+                  <span class="dashboard__project-status">معلق</span>
+                  <span class="dashboard__project-date">1403/12/25</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="profile" class="content">
+          <h2 class="content__title">اطلاعات پروفایل</h2>
+          <div class="profile-header">
+            <div class="profile-header__background"></div>
+            <div class="profile-header__info">
+              <div class="user-list__profile">
+                <img
+                  src="assets/images/user1.jpg"
+                  alt="آواتار سیامک خلیلی"
+                  class="user-list__avatar" />
+                <div class="user-list__info">
+                  <span class="user-list__name">سیامک خلیلی</span>
+                  <span class="user-list__role"
+                    >مدیر پروژه و توسعه‌دهنده اصلی</span
+                  >
+                </div>
+              </div>
+              <div class="profile-menu">
+                <button class="profile-menu__button">نمای کلی</button>
+                <button class="profile-menu__button">تیم‌ها</button>
+                <button class="profile-menu__button">پروژه‌ها</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-cards">
+            <div class="profile-card profile-card--settings">
+              <h3 class="profile-card__title">تنظیمات پروفایل</h3>
+
+              <div class="profile-card__section">
+                <h4 class="profile-card__section-title">اکانت</h4>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label"
+                    >وقتی کسی مرا دنبال کرد به من ایمیل بزنید</span
+                  >
+                </div>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label"
+                    >وقتی کسی در پست من جواب داد به من ایمیل بزنید</span
+                  >
+                </div>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label"
+                    >وقتی کسی از من نام برد به من ایمیل بزنید</span
+                  >
+                </div>
+              </div>
+
+              <div class="profile-card__section">
+                <h4 class="profile-card__section-title">برنامه</h4>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label"
+                    >راه‌اندازی و پروژه‌های جدید</span
+                  >
+                </div>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label">به‌روزرسانی ماهانه محصول</span>
+                </div>
+
+                <div class="profile-card__checkbox">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="checkbox-label">مشترک شدن در خبرنامه</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card profile-card--details">
+              <h3 class="profile-card__title">جزئیات حساب</h3>
+              <p class="profile-card__description">
+                در این بخش می‌توانید اطلاعات حساب کاربری خود مانند نام کامل،
+                شماره موبایل، ایمیل و شبکه‌های اجتماعی خود را مدیریت کنید.
+              </p>
+              <ul class="profile-card__list">
+                <li class="profile-card__list-item">نام کامل: سیامک خلیلی</li>
+                <li class="profile-card__list-item">موبایل: 0912xxxxxxx</li>
+                <li class="profile-card__list-item">
+                  ایمیل: siamakh@example.com
+                </li>
+                <li class="profile-card__list-item">مکان: اشنویه، ایران</li>
+                <li class="profile-card__list-item">
+                  رسانه‌های اجتماعی: @siamakdev
+                </li>
+              </ul>
+            </div>
+
+            <div class="profile-card profile-card--conversations">
+              <h3 class="profile-card__title">گفتگوها</h3>
+              <ul class="profile-card__user-list">
+                <li class="user-list__item">
+                  <div class="user-list__profile">
+                    <img
+                      src="assets/images/user6.webp"
+                      alt="آواتار سیامک خلیلی"
+                      class="user-list__avatar" />
+                    <div class="user-list__info">
+                      <span class="user-list__name">آرمین نظری</span>
+                      <span class="user-list__role"
+                        >به اطلاعات بیشتر نیاز دارم...</span
+                      >
+                    </div>
+                  </div>
+                  <span class="user-list__reply">پاسخ دادن</span>
+                </li>
+                <li class="user-list__item">
+                  <div class="user-list__profile">
+                    <img
+                      src="assets/images/user2.webp"
+                      alt="آواتار نازنین رستمی"
+                      class="user-list__avatar" />
+                    <div class="user-list__info">
+                      <span class="user-list__name">نازنین رستمی</span>
+                      <span class="user-list__role"
+                        >کار فوق العاده ای میشه تغییر بدی...</span
+                      >
+                    </div>
+                  </div>
+                  <span class="user-list__reply">پاسخ دادن</span>
+                </li>
+                <li class="user-list__item">
+                  <div class="user-list__profile">
+                    <img
+                      src="assets/images/user4.webp"
+                      alt="آواتار آرمین نظری"
+                      class="user-list__avatar" />
+                    <div class="user-list__info">
+                      <span class="user-list__name">سارا اکبری</span>
+                      <span class="user-list__role"
+                        >بعدازظهر خوبی داشته باشید...</span
+                      >
+                    </div>
+                  </div>
+                  <span class="user-list__reply">پاسخ دادن</span>
+                </li>
+                <li class="user-list__item">
+                  <div class="user-list__profile">
+                    <img
+                      src="assets/images/user3.webp"
+                      alt="آواتار پریسا کریمی"
+                      class="user-list__avatar" />
+                    <div class="user-list__info">
+                      <span class="user-list__name">پریسا کریمی</span>
+                      <span class="user-list__role"
+                        >درباره فایل هایی که می توانم ...</span
+                      >
+                    </div>
+                  </div>
+                  <span class="user-list__reply">پاسخ دادن</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="profile-projects">
+            <h3 class="profile-projects__title">پروژه‌ها</h3>
+            <div class="profile-projects__list">
+              <div class="profile-projects__item">
+                <img
+                  src="assets/images/profile-projects.jpg"
+                  alt="پروژه 1"
+                  class="profile-projects__image" />
+                <div class="profile-projects__header">
+                  <span class="profile-projects__number">پروژه #1</span>
+                  <h4 class="profile-projects__name">طراحی سیستم چت آنلاین</h4>
+                  <p class="profile-projects__description">
+                    سیستم چت زنده برای سایت‌های وردپرسی با پنل اختصاصی اپراتور.
+                  </p>
+                </div>
+                <button class="profile-projects__button">مشاهده پروژه‌</button>
+              </div>
+              <div class="profile-projects__item">
+                <img
+                  src="assets/images/profile-projects2.jpg"
+                  alt="پروژه 1"
+                  class="profile-projects__image" />
+                <div class="profile-projects__header">
+                  <span class="profile-projects__number">پروژه #2</span>
+                  <h4 class="profile-projects__name">داشبورد مدیریت محتوا</h4>
+                  <p class="profile-projects__description">
+                    طراحی داشبورد پیشرفته برای مدیریت آسان مقالات و کاربران
+                    سایت.
+                  </p>
+                </div>
+                <button class="profile-projects__button">مشاهده پروژه‌</button>
+              </div>
+              <div class="profile-projects__item">
+                <img
+                  src="assets/images/profile-projects3.jpg"
+                  alt="پروژه 1"
+                  class="profile-projects__image" />
+                <div class="profile-projects__header">
+                  <span class="profile-projects__number">پروژه #3</span>
+                  <h4 class="profile-projects__name">وب‌اپلیکیشن فروشگاهی</h4>
+                  <p class="profile-projects__description">
+                    پیاده‌سازی یک فروشگاه آنلاین مدرن با پرداخت آنلاین و مدیریت
+                    موجودی.
+                  </p>
+                </div>
+                <button class="profile-projects__button">مشاهده پروژه‌</button>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section id="signin" class="content">
+          <div class="signin-form">
+            <h2 class="form-title">خوش برگشتی!</h2>
+            <p class="form-subtitle">ایمیل و رمز عبور خود را وارد کنید</p>
+
+            <form action="#">
+              <div class="form-group">
+                <input type="email" placeholder="ایمیل" required />
+              </div>
+
+              <div class="form-group">
+                <input type="password" placeholder="رمز عبور" required />
+              </div>
+
+              <div class="profile-card__checkbox">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <span class="checkbox-label">مرا به خاطر بسپار</span>
+              </div>
+
+              <button type="submit" class="signin-button">ورود</button>
+
+              <p class="signup-text">
+                حساب کاربری ندارید؟
+                <a href="#" class="signup-link">ثبت نام کنید</a>
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section id="signup" class="content">
+          <div class="signin-form">
+            <h2 class="form-title">خوش آمدید!</h2>
+            <p class="form-subtitle">
+              اطلاعات خود را برای ایجاد حساب وارد کنید
+            </p>
+            <form action="#">
+              <div class="form-group">
+                <input type="text" placeholder="نام کامل" required />
+              </div>
+
+              <div class="form-group">
+                <input type="email" placeholder="ایمیل" required />
+              </div>
+
+              <div class="form-group">
+                <input type="password" placeholder="رمز عبور" required />
+              </div>
+
+              <div class="profile-card__checkbox">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+                <span class="checkbox-label">شرایط و قوانین را قبول دارم</span>
+              </div>
+              <button type="submit" class="signin-button">ثبت نام</button>
+              <p class="signup-text">
+                قبلاً حساب دارید؟
+                <a href="#" class="signup-link">وارد شوید</a>
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section id="logout" class="content">
+          <div class="signin-form">
+            <h2 class="content__title">خروج از حساب</h2>
+            <p class="form-subtitle">آیا مطمئن هستید که می‌خواهید خارج شوید؟</p>
+            <button class="signin-button">خروج از حساب</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="main-footer">
+      <div class="footer__content">
+        <p class="footer__text">@ 1404، ساخته شده با ❤️ توسط سیامک خلیلی برای وب بهتر</p>
+        <ul class="footer__menu">
+          <li><a href="#">لایسنس</a></li>
+          <li><a href="#">بلاگ</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس با ما</a></li>
+          <li><a href="#">حریم خصوصی</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
