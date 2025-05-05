@@ -91,6 +91,15 @@ h3 {
   }
 }
 
+/* HEADER */
+
+.main-header{
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+}
+
+
 /* Siadebar */
 
 .dashboard {
@@ -99,10 +108,18 @@ h3 {
 }
 
 .dashboard__sidebar {
-  width: 200px;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
   padding: 20px 10px;
   transition: all 0.4s ease-out;
   overflow: hidden;
+}
+
+.dashboard__sidebar.sidebar__expanded {
+  min-width: 250px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .sidebar__logo h1 {
@@ -114,31 +131,21 @@ h3 {
 .sidebar__menu {
   transition: all 0.4s ease;
   margin: 20px 0 0 0;
-  opacity: 1;
-  visibility: visible;
 }
 
 .sidebar__toggler {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1023px) {
-  .dashboard__sidebar {
-    width: 80px;
-  }
+@media screen and (min-width: 1024px) {
 
-  .dashboard__sidebar.sidebar__expanded {
-    min-width: 180px;
-  }
-  .sidebar__menu {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .dashboard__sidebar.sidebar__expanded .sidebar__menu {
+  .dashboard__sidebar {
+    min-width: 250px;
     opacity: 1;
     visibility: visible;
   }
 }
+
 .bar {
   width: 25px;
   height: 3px;
@@ -162,9 +169,7 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .dashboard__sidebar {
-    min-width: 250px;
-  }
+
   .sidebar__toggler {
     display: none;
   }
@@ -187,7 +192,7 @@ h3 {
   background-color: var(--text-color-inverse);
 }
 
-.sidebar__item.active {
+.sidebar__item.sidebar__item--active {
   background-color: var(--text-color-inverse);
 }
 
@@ -202,7 +207,7 @@ h3 {
 }
 
 .sidebar__item:hover .sidebar__item__icon,
-.sidebar__item.active .sidebar__item__icon {
+.sidebar__item.sidebar__item--active .sidebar__item__icon {
   background-color: var(--primary-color);
 }
 
@@ -216,7 +221,7 @@ h3 {
   fill: var(--text-color-inverse);
 }
 
-.sidebar__item.active .sidebar__item__icon svg {
+.sidebar__item.sidebar__item--active .sidebar__item__icon svg {
   fill: var(--text-color-inverse);
 }
 
@@ -420,7 +425,7 @@ h3 {
 .requests-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8rem 3rem;
+  gap: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -844,6 +849,10 @@ input:checked + .slider::before {
 .user-list__reply {
   color: var(--primary-color);
   cursor: pointer;
+}
+
+.user-list__reply:hover{
+color: var(--text-color-primary);
 }
 
 @media screen and (min-width: 768px) {
